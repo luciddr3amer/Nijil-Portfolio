@@ -111,20 +111,30 @@ nav ul li a:hover {
   font-size: 1.5rem;
 }
 .firstSection {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 130px 0;
-}
-.firstSection > div {
-  width: 30%;
-}
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+  }
+  
+  .firstSection > div {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 .leftsection {
   font-size: 3rem;
 }
-.rightsection img {
-  width: 100%;
-}
+.rightsection {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rightsection img {
+    width: 100%;
+    max-width: 300px;
+  }
 .name {
   color: rgb(157, 18, 18);
 }
@@ -247,6 +257,9 @@ nav ul li a:hover {
   }
   
   @media (max-width: 767px) {
+       .firstSection > div {
+        width: 100%;
+      }
     .about-content {
       padding: 0 20px;
     }
